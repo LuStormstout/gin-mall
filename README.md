@@ -1,6 +1,6 @@
 # Gin-Mall
 
-Gin-Mall is a shopping mall project built with Gin and gRPC.
+Gin-Mall is a shopping mall project built with Gin.
 
 ## Features
 
