@@ -1,13 +1,13 @@
-# gin-mall
+# gin_mall
 
-Gin-Mall 是一个使用 Gin Web 框架构建的电商示例应用，用于 Go 语言。该项目提供了一个可扩展且易于维护的 Go Web 应用程序的基本结构。
+gin_mall 是一个使用 Gin Web 框架构建的电商示例应用，用于 Go 语言。该项目提供了一个可扩展且易于维护的 Go Web 应用程序的基本结构。
 
 ## 项目结构
 
 ```
-gin-mall/
+gin_mall/
 |-- cmd/                 # 主要应用程序入口
-|   |-- gin-mall/
+|   |-- gin_mall/
 |       |-- main.go
 |-- config/              # 应用程序配置
 |   |-- config.go
@@ -44,19 +44,19 @@ gin-mall/
 1. **克隆仓库:**
 
    ```bash
-   git clone https://github.com/LuStormstout/gin-mall.git
+   git clone https://github.com/LuStormstout/gin_mall.git
    ```
 
 2. **切换到项目目录:**
 
    ```bash
-   cd gin-mall
+   cd gin_mall
    ```
 
 3. **运行应用程序:**
 
    ```bash
-   go run cmd/gin-mall/main.go
+   go run cmd/gin_mall/main.go
    ```
 
    应用程序将在 [http://localhost:8080](http://localhost:8080) 处可访问。
@@ -70,13 +70,13 @@ gin-mall/
 要应用数据库迁移，请使用以下命令:
 
 ```bash
-go run cmd/gin-mall/main.go migrate up
+go run cmd/gin_mall/main.go migrate up
 ```
 
 要回滚迁移，请运行:
 
 ```bash
-go run cmd/gin-mall/main.go migrate down
+go run cmd/gin_mall/main.go migrate down
 ```
 
 ## 贡献

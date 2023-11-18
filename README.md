@@ -1,15 +1,15 @@
-# gin-mall
+# gin_mall
 
-Gin-Mall is a sample e-commerce application built with the Gin web framework for Go. This project provides a basic structure for a scalable and maintainable Go web application.
+gin_mall is a sample e-commerce application built with the Gin web framework for Go. This project provides a basic structure for a scalable and maintainable Go web application.
 
 **[中文版本](README_zh.md)**
 
 ## Project Structure
 
 ```
-gin-mall/
+gin_mall/
 |-- cmd/                 # Main application entry point
-|   |-- gin-mall/
+|   |-- gin_mall/
 |       |-- main.go
 |-- config/              # Application configuration
 |   |-- config.go
@@ -46,19 +46,19 @@ gin-mall/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/LuStormstout/gin-mall.git
+   git clone https://github.com/LuStormstout/gin_mall.git
    ```
 
 2. **Change into the project directory:**
 
    ```bash
-   cd gin-mall
+   cd gin_mall
    ```
 
 3. **Run the application:**
 
    ```bash
-   go run cmd/gin-mall/main.go
+   go run cmd/gin_mall/main.go
    ```
 
    The application will be accessible at [http://localhost:8080](http://localhost:8080).
@@ -72,13 +72,13 @@ The configuration settings for the application can be found in the `config/confi
 To apply database migrations, use the following commands:
 
 ```bash
-go run cmd/gin-mall/main.go migrate up
+go run cmd/gin_mall/main.go migrate up
 ```
 
 To rollback migrations:
 
 ```bash
-go run cmd/gin-mall/main.go migrate down
+go run cmd/gin_mall/main.go migrate down
 ```
 
 ## Contributing
