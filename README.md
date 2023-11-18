@@ -8,37 +8,37 @@ gin_mall is a sample e-commerce application built with the Gin web framework for
 
 ```
 gin_mall/
-|-- cmd/                 # 主应用入口
+|-- cmd/                   # Main application entry point
 |   |-- gin_mall/
 |       |-- main.go
-|-- config/              # 应用配置
+|-- config/                # Application configuration
 |   |-- config.go
-|-- internal/            # 内部应用代码
-|   |-- app/             # 应用核心逻辑
+|-- internal/              # Internal application code
+|   |-- app/               # Application core logic
 |       |-- app.go
-|       |-- handlers/    # HTTP 请求处理
+|       |-- handlers/      # HTTP request handling
 |           |-- product_handler.go
-|       |-- repositories/  # 数据库访问层
+|       |-- repositories/  # Database access layer
 |           |-- product_repository.go
-|       |-- services/     # 业务逻辑层
+|       |-- services/      # Business logic layer
 |           |-- product_service.go
-|-- migrations/          # 数据库迁移脚本
+|-- migrations/            # Database migration scripts
 |   |-- 001_init_schema.up.sql
 |   |-- 001_init_schema.down.sql
-|-- models/               # 数据模型
+|-- models/                # Data models
 |   |-- product.go
-|-- pkg/                  # 通用包和库
-|   |-- utils/            # 通用工具函数
+|-- pkg/                   # Common packages and libraries
+|   |-- utils/             # General utility functions
 |       |-- response.go
-|-- scripts/              # 脚本文件
+|-- scripts/               # Script files
 |   |-- deploy.sh
-|-- web/                  # 与 web 相关的资源
-|   |-- static/           # 静态文件
-|   |-- templates/        # HTML 模板文件
-|-- .gitignore            # Git 忽略文件列表
-|-- go.mod                # Go 模块文件
-|-- go.sum                # Go 模块依赖文件
-|-- README.md             # 项目文档
+|-- web/                   # Web-related resources
+|   |-- static/            # Static files
+|   |-- templates/         # HTML template files
+|-- .gitignore             # Git ignore file list
+|-- go.mod                 # Go module file
+|-- go.sum                 # Go module dependency file
+|-- README.md              # Project documentation
 
 ```
 
