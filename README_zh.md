@@ -44,7 +44,7 @@ gin-mall/
 1. **克隆仓库:**
 
    ```bash
-   git clone https://github.com/your-username/gin-mall.git
+   git clone https://github.com/LuStormstout/gin-mall.git
    ```
 
 2. **切换到项目目录:**

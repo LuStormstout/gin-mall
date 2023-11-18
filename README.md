@@ -46,7 +46,7 @@ gin-mall/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/gin-mall.git
+   git clone https://github.com/LuStormstout/gin-mall.git
    ```
 
 2. **Change into the project directory:**
