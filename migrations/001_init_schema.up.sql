@@ -15,6 +15,24 @@ CREATE INDEX idx_user_username ON `user`(username);
 CREATE INDEX idx_user_email ON `user`(email);
 
 
+-- 用户地址表
+CREATE TABLE `user_address` (
+    address_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT COMMENT '地址ID',
+    user_id INT UNSIGNED NOT NULL COMMENT '用户ID',
+    recipient_name VARCHAR(50) NOT NULL COMMENT '收件人姓名',
+    phone_number VARCHAR(20) NOT NULL COMMENT '联系电话',
+    province VARCHAR(50) COMMENT '省',
+    city VARCHAR(50) COMMENT '市',
+    district VARCHAR(50) COMMENT '区/县',
+    detailed_address TEXT COMMENT '详细地址',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+    FOREIGN KEY (user_id) REFERENCES `user`(user_id)
+);
+
+CREATE INDEX idx_user_address_user_id ON `user_address`(user_id);
+
+
 -- 管理员表
 CREATE TABLE `admin` (
     admin_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT COMMENT '管理员ID',
@@ -152,21 +170,3 @@ CREATE TABLE `role_permission` (
 
 CREATE INDEX idx_role_permission_role_id ON `role_permission`(role_id);
 CREATE INDEX idx_role_permission_permission_id ON `role_permission`(permission_id);
-
-
--- 用户地址表
-CREATE TABLE `user_address` (
-    address_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT COMMENT '地址ID',
-    user_id INT UNSIGNED NOT NULL COMMENT '用户ID',
-    recipient_name VARCHAR(50) NOT NULL COMMENT '收件人姓名',
-    phone_number VARCHAR(20) NOT NULL COMMENT '联系电话',
-    province VARCHAR(50) COMMENT '省',
-    city VARCHAR(50) COMMENT '市',
-    district VARCHAR(50) COMMENT '区/县',
-    detailed_address TEXT COMMENT '详细地址',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
-    FOREIGN KEY (user_id) REFERENCES `user`(user_id)
-);
-
-CREATE INDEX idx_user_address_user_id ON `user_address`(user_id);
